@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking System</title>
+    <link rel="shortcut icon" href="images/images.png" type="image/x-icon">
+    <!-- Tailwind Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Script  -->
+    <script src="https://kit.fontawesome.com/0ba4621c3b.js" crossorigin="anonymous"></script>
+    <!-- External CSS  -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="login-section">
+        <label for="user-email" class="block my-5">Write Your E-mail: <input id="uEmail" class="border border-orange-400 border-b-2" type="email" id="user-email" placeholder="Write your e-mail here" size="25"></label>
+        <label for="user-pass" class="block my-5">Write Your Password: <input id="uPass" class="border border-orange-400 border-b-2" type="password" id="user-pass" placeholder="Write your password here" size="25"></label>  
+        <h5 id="get-user-info" class="get-user-info my-2"><span><i class="fas fa-lightbulb"></i></span> Click to get user id & password!</h5>      
+        <button class="border border-orange-400 border-b-2 block px-5 py-2" id="login-btn">Login</button> 
+    </div>    
+    <div class="user-info my-2">
+        <p id="mail"></p>
+        <p id="pass"></p>
+    </div>
+    <div class="alert-section my-2">
+        <p class="wrong-alert" id="wrongInfo"></p>
+    </div>
+
+    <!-- External JavaScripts -->
+    <script>
+        
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/fucntions.js"></script>
 </body>
 </html>

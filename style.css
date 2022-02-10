@@ -1,0 +1,19 @@
+/* Style For Login Page   */
+.get-user-info{
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+.user-info{
+
+}
+.wrong-alert{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style for Main Banking Calculation system page  */
+#logout-btn:hover{
+    background-color: rgb(2, 2, 54);
+}

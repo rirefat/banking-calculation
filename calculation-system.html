@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Calculation</title>
+    <link rel="shortcut icon" href="images/images.png" type="image/x-icon">
+    <!-- Tailwind Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Script  -->
+    <script src="https://kit.fontawesome.com/0ba4621c3b.js" crossorigin="anonymous"></script>
+    <!-- External CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Your Banking Transactions</h1>
+    <button id="logout-btn" class="border rounded-lg bg-blue-500 text-white text-xl px-6 py-2 my-5" >Logout</button>
+
+
+    <!-- External JavaScripts -->
+    <!-- <script src="js/script.js"></script>
+    <script src="js/fucntions.js"></script> -->
+
+    <script>
+        document.getElementById('logout-btn').addEventListener('click', function(){
+            console.log('LOGOUT');
+            window.location.href ='index.html';
+            // window.location.href = 'calculation-system.html';
+        })
+    </script>
+</body>
+</html>
