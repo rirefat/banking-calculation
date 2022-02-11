@@ -19,10 +19,3 @@ function userValidation(){
         alertText.innerText ="You've entered wrong email or password. Try again with correct user information.";
     }
 }
-
-// Function for user logout
-// document.getElementById('logout-btn').addEventListener('click', logout);
-
-// function logout(){
-//     window.location.href('index.html');
-// }

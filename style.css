@@ -18,6 +18,9 @@ font-family: 'Quintessential', cursive; */
 .bank-title{
     font-family: 'Quintessential', cursive;
 }
+.acc-status .grid{
+    cursor: pointer;
+}
 .fa-money-bill-wave{
     color: green;
 }

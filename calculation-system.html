@@ -32,7 +32,7 @@
             </div>
             <div class="drop-shadow-lg withdraw text-white  rounded-lg bg-purple-400 p-8">
                 <h1 class="">Withdraw Amount</h1>
-                <h1 class="amount text-6xl font-semibold">$<span>00</span></h1>
+                <h1 class="amount text-6xl font-semibold">$<span id="initial-withdraw-amount">00</span></h1>
             </div>
             <div class="drop-shadow-lg total-balance text-white rounded-lg bg-blue-400 p-8">
                 <h1 class="">Total Balance</h1>
@@ -43,12 +43,12 @@
     <div class="update-status grid grid-cols-2 gap-8 w-3/4 mx-auto my-12">
         <div class="deposit text-black rounded-lg bg-violet-200 p-8 drop-shadow-lg">
             <h1 class="text-lg"><i class="fas fa-money-bill-wave"></i> Please Deposit</h1>
-            <input type="text" id="deposit-field" class="block border border-gray-400 w-3/4 py-2 rounded " placeholder="$ Amount you want to deposit" size="25" id="">
+            <input type="text" id="deposit-field" class="block border border-gray-400 w-3/4 py-2 rounded " placeholder="$ Amount you want to deposit" size="25">
             <button id="deposit-btn" class="drop-shadow-lg block bg-orange-400 text-white text-xl px-6 py-2 rounded-lg my-5">Deposit</button>
         </div>
         <div class="deposit text-black rounded-lg bg-violet-200 p-8 drop-shadow-lg">
             <h1 class="text-lg"><i class="fas fa-money-bill-wave"></i> Please Withdraw</h1>
-            <input type="text" class="block border border-gray-400 w-3/4 py-2 rounded " placeholder="$ Amount you want to withdraw" size="25" id="">
+            <input type="text" class="block border border-gray-400 w-3/4 py-2 rounded " placeholder="$ Amount you want to withdraw" size="25" id="withdraw-field">
             <button id="withdraw-btn" class="drop-shadow-lg block bg-orange-400 text-white text-xl px-6 py-2 rounded-lg my-5">Withdraw</button>
         </div>
     </div>
