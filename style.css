@@ -18,6 +18,9 @@ font-family: 'Quintessential', cursive; */
 .bank-title{
     font-family: 'Quintessential', cursive;
 }
+.fa-money-bill-wave{
+    color: green;
+}
 .amount{
     font-family: 'Dancing Script', cursive;
 }
