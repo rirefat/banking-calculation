@@ -34,10 +34,5 @@ function userValidation(){
     }
 }
 
-// Function for user logout
-// document.getElementById('logout-btn').addEventListener('click', logout);
 
-// function logout(){
-//     window.location.href('index.html');
-//     console.log('clicked')
-// }
+

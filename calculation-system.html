@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banking Calculation</title>
+    <title>HIREF Banking Ltd.</title>
     <link rel="shortcut icon" href="images/images.png" type="image/x-icon">
     <!-- Tailwind Script -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome Script  -->
     <script src="https://kit.fontawesome.com/0ba4621c3b.js" crossorigin="anonymous"></script>
+    <!-- Internal CSS  -->
+    <style>
+        body{
+            background-color: #e1eeff;
+        }
+    </style>
     <!-- External CSS  -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Your Banking Transactions</h1>
-    <button id="logout-btn" class="border rounded-lg bg-blue-500 text-white text-xl px-6 py-2 my-5" >Logout</button>
+    <h1 class="text-center mt-16 text-6xl font-bold bank-title">HIRAF Banking Ltd.</h1>
+    <div class="acc-status">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto my-12">
+            <div class="drop-shadow-lg deposit text-white rounded-lg bg-sky-400 p-8">
+                <h1 class="text-lg">Deposit Amount</h1>
+                <h1 class="amount text-6xl font-semibold">$<span>00</span></h1>
+            </div>
+            <div class="drop-shadow-lg withdraw text-white  rounded-lg bg-purple-400 p-8">
+                <h1 class="">Withdraw Amount</h1>
+                <h1 class="amount text-6xl font-semibold">$<span>00</span></h1>
+            </div>
+            <div class="drop-shadow-lg total-balance text-white rounded-lg bg-blue-400 p-8">
+                <h1 class="">Total Balance</h1>
+                <h1 class="amount text-6xl font-semibold">$<span>1000</span></h1>
+            </div>
+        </div>
+    </div>
+    <div class="update-status grid grid-cols-2 gap-8 w-3/4 mx-auto my-12">
+        <div class="deposit text-black rounded-lg bg-violet-200 p-8 drop-shadow-lg">
+            <h1 class="text-lg">Please Deposit</h1>
+            <input type="text" class="block border border-gray-400 w-3/4 py-2 rounded " placeholder="$ Amount you want to deposit" size="25" id="">
+            <button class="drop-shadow-lg block bg-orange-400 text-white text-xl px-6 py-2 rounded-lg my-5">Deposit</button>
+        </div>
+        <div class="deposit text-black rounded-lg bg-violet-200 p-8 drop-shadow-lg">
+            <h1 class="text-lg">Please Withdraw</h1>
+            <input type="text" class="block border border-gray-400 w-3/4 py-2 rounded " placeholder="$ Amount you want to withdraw" size="25" id="">
+            <button class="drop-shadow-lg block bg-orange-400 text-white text-xl px-6 py-2 rounded-lg my-5">Withdraw</button>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <button id="logout-btn" class="drop-shadow-lg border rounded-lg bg-blue-500 text-white text-xl px-6 py-2 my-5" >Logout</button>
+    </div>
+    
 
 
-    <!-- External JavaScripts -->
-    <!-- <script src="js/script.js"></script>
-    <script src="js/fucntions.js"></script> -->
-
+    <!-- Internal Scripts  -->    
     <script>
         document.getElementById('logout-btn').addEventListener('click', function(){
             console.log('LOGOUT');
             window.location.href ='index.html';
-            // window.location.href = 'calculation-system.html';
         })
     </script>
+    <script src="js/calculation-script.js"></script>
+
+    <!-- External JavaScripts -->
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/fucntions.js"></script> -->
+
+    
 </body>
 </html>
