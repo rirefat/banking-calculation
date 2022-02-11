@@ -3,7 +3,9 @@ document.getElementById('get-user-info').addEventListener('click',function(){
     const displayUserEmailInfo = document.getElementById('mail');
     displayUserEmailInfo.innerText = 'Email: abc@email.com';
     const displayUserPassInfo = document.getElementById('pass');
-    displayUserPassInfo.innerText = 'Password: abc@123&abc'
+    displayUserPassInfo.innerText = 'Password: abc@123&abc';
+
+    document.getElementById('user-info').style.padding='10px 0';
 });
 
 // User information validation section 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIREF Banking Ltd.</title>
+    <title>HIRAF Banking Ltd.</title>
     <link rel="shortcut icon" href="images/images.png" type="image/x-icon">
     <!-- Tailwind Script -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,28 +12,40 @@
     <script src="https://kit.fontawesome.com/0ba4621c3b.js" crossorigin="anonymous"></script>
     <!-- External CSS  -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: linear-gradient(120deg, #2980b9, #8e44ad);
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="login-section">
-        <label for="user-email" class="block my-5">Write Your E-mail: <input id="uEmail" class="border border-orange-400 border-b-2" type="email" id="user-email" placeholder="Write your e-mail here" size="25"></label>
-        <label for="user-pass" class="block my-5">Write Your Password: <input id="uPass" class="border border-orange-400 border-b-2" type="password" id="user-pass" placeholder="Write your password here" size="25"></label>  
-        <h5 id="get-user-info" class="get-user-info my-2"><span><i class="fas fa-lightbulb"></i></span> Click to get user id & password!</h5>      
-        <button class="border border-orange-400 border-b-2 block px-5 py-2" id="login-btn">Login</button> 
-    </div>    
-    <div class="user-info my-2">
-        <p id="mail"></p>
-        <p id="pass"></p>
+    <div class="center mt-24 w-1/4 mx-auto py-12 bg-sky-50 rounded-lg drop-shadow-lg">
+        <h1 class="user-login-title text-center text-4xl pb-6 mb-6  border-b-4 border-indigo-500"><span><i class="text-indigo-500 fas fa-user-circle"></i></span> User Login</h1>
+        <div class="login-section ml-12">            
+            <div class="user-id-section mb-2">
+                <input id="uEmail" class="py-2 bg-sky-50" type="email" id="user-email" size="34">
+                <label for="uEmail" class="block border-t-2 border-neutral-300">Write Your E-mail</label> 
+            </div>           
+            <div class="user-pass-section mb-2">
+                <input id="uPass" class="py-2 bg-sky-50" type="password" id="user-pass" size="34">
+                <label for="uPass" class="block border-t-2 border-neutral-300">Write Your Password</label>
+            </div>  
+            <h5 id="get-user-info" class="get-user-info my-10"><span><i class="fas fa-lightbulb"></i></span> Click to get user id & password!</h5>      
+            <button class="drop-shadow-lg rounded-lg bg-orange-400 text-lg text-white block px-5 py-2" id="login-btn">Login</button> 
+        </div>            
+    </div>
+    <div class="user-info w-1/5 rounded-r-lg my-2 border-r-4 border-orange-500" id="user-info">
+        <p class="text-white text-xl ml-10" id="mail"></p>
+        <p class="text-white text-xl ml-10" id="pass"></p>
     </div>
     <div class="alert-section my-2">
         <p class="wrong-alert" id="wrongInfo"></p>
     </div>
 
     <!-- External JavaScripts -->
-    <script>
-        
-    </script>
     <script src="js/script.js"></script>
-    <!-- <script src="js/fucntions.js"></script> -->
 </body>
 </html>

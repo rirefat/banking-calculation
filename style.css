@@ -3,13 +3,35 @@
 font-family: 'Quintessential', cursive; */
 
 /* Style For Login Page   */
+.user-login-title{
+    font-family: 'Quintessential', cursive;
+}
+.login-section label{
+    cursor: pointer;
+    width: 85%;
+    font-size: 1.2em;
+}
+.login-section button:hover{
+    background-color: #582a04;
+    border: transparent;
+}
 .get-user-info{
     color: green;
     font-weight: bold;
     cursor: pointer;
 }
+.user-info{
+    background: linear-gradient(120deg, #6c5ce7, #1e90ff);
+}
+.user-info p{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+.user-info p::selection{
+    color: whitesmoke;
+    background: black;
+}
 .wrong-alert{
-    color: red;
+    color: #dfe6e9;
     text-align: center;
     font-weight: bold;
 }
